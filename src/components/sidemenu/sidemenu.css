@@ -1,0 +1,30 @@
+.sidemenu {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 450px;
+    background-color: white;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px rgb(185, 185, 185);
+}
+
+.side-btn {
+    border: 2px solid rgb(243, 241, 241);
+    border-start-end-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background: white;
+    color: black;
+
+}
+
+.side-btn:hover {
+    background-color: rgb(88, 188, 227);
+    box-shadow: -5px 3px 3px rgb(185, 185, 185);
+    border: none;
+}
+
+.side-btn .icons {
+    color: rgb(87, 176, 212);
+}

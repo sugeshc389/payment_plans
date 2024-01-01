@@ -1,6 +1,5 @@
+import Card1 from './Card1';
 import './cards.css'
-import { Card1 } from "../components/Card1";
-import { Card2 } from "../components/Card2";
 
 const Cards = () => {
     return (
@@ -16,8 +15,8 @@ const Cards = () => {
                     </div>
                 </div>
             </div>
-            <Card1 />
-            <Card2 />
+            <Card1/>
+          
             <p id="sub">*some unique features are provided as add-ons with individual plans for each feature </p>
         </div>
     );

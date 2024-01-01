@@ -1,18 +1,78 @@
-import './sidemenu.css'
-import { MdDashboard } from "react-icons/md";
-import { PiPottedPlantFill } from "react-icons/pi";
-import { SlPuzzle } from "react-icons/sl";
 
+import "./sidemenu.css";
+import { IoIosArrowForward } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RiShutDownLine } from "react-icons/ri";
+import image from '../../assets/49408.png'
+import table from "../../assets/table.png";
+import FAQ from "../../assets/faq.png";
+import support from "../../assets/support.png";
+import addon from "../../assets/token.png";
+import perks from "../../assets/perks.png";
 const SideMenu = () => {
-  return (
-    <div className='sidemenu'>
-      <button className='side-btn'> <MdDashboard className='icons' />Dashboard</button>
-      <button className='side-btn'> <PiPottedPlantFill className='icons' />Perks</button>
-      <button className='side-btn'> <SlPuzzle className='icons' />Addons</button>
-      <button className='side-btn'>FAQ</button>
-      <button className='side-btn'>Support</button>
-    </div>
-  )
-}
 
-export default SideMenu
+
+  return (
+    <>
+      <GiHamburgerMenu className="toggleBtn" style={{ position: "absolute" }} />
+      <div className="sideBar">
+        <div className="sidebar-content">
+          <div className="userDetails">
+            <div className="img">
+              <img src={image} alt="" />
+            </div>
+            <p>
+              Ram Mohan{" "}
+              <span>
+                <IoIosArrowForward />
+              </span>
+            </p>
+            <p>rammohan2@gmail.com</p>
+          </div>
+          <div className="navigation">
+            <ul>
+              <a href="">
+                <li className="liactive">
+                  <img src={table} alt="" />
+                  <span>Dahboard</span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <img src={perks} alt="" />
+                  <span>Perks</span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <img src={addon} alt="" />
+                  <span>Addons</span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <img src={FAQ} alt="" />
+                  <span>FAQ</span>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <img src={support} alt="" />
+                  <span>Support</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <button>
+          Logout{" "}
+          <span>
+            <RiShutDownLine />
+          </span>
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default SideMenu;

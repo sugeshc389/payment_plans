@@ -8,7 +8,7 @@ import { cardData } from "../../data";
 
 const Card1 = () => {
     return (
-        <div className="Card1Main">
+        <div className="card1Main">
             {cardData.map((data,i) => (
                 <div className="card" key={i}>
                     <h1>{data.title}</h1>

@@ -1,10 +1,11 @@
 import Card1 from './Card1';
+import Card2 from './Card2';
 import './cards.css'
 
 const Cards = () => {
     return (
-        <div className="Dashboard">
-            <div className="Dashboard_header">
+        <div className="dashboard">
+            <div className="dashboard_header">
                 <h1>Choose a plan that's just fit for you !</h1>
                 <div className="d-btn_box">
                     <div id="btn">
@@ -16,6 +17,7 @@ const Cards = () => {
                 </div>
             </div>
             <Card1/>
+            <Card2/>
           
             <p id="sub">*some unique features are provided as add-ons with individual plans for each feature </p>
         </div>

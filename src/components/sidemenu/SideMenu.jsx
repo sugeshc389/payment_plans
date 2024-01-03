@@ -3,7 +3,6 @@ import "./sidemenu.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiShutDownLine } from "react-icons/ri";
-import image from '../../assets/49408.png'
 import table from "../../assets/table.png";
 import FAQ from "../../assets/faq.png";
 import support from "../../assets/support.png";
@@ -19,7 +18,7 @@ const SideMenu = () => {
         <div className="sidebar-content">
           <div className="userDetails">
             <div className="img">
-              <img src={image} alt="" />
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuWIaHp9DuOVnnRaT-Y_tRE57_Ivw-agMDz7JTUMgXQ&s' alt="" />
             </div>
             <p>
               Ram Mohan{" "}

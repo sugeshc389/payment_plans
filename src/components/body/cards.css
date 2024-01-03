@@ -1,15 +1,15 @@
-.Dashboard {
+.dashboard {
     padding: 2rem 3rem;
     width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     background-color: white;
 }
-.Dashboard_header {
+.dashboard_header {
     position: relative;
 }
-.Dashboard h1 {
+.dashboard h1 {
     font-size: 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -40,16 +40,17 @@
     background-color: #c9e4ff;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.Dashboard #sub {
+.dashboard #sub {
     align-self: flex-end;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #539ad2;
+   margin-top: -25px;
 }
 
 @media all and (max-width: 745px) {
-    .Dashboard h1 {
+    .dashboard h1 {
         font-size: 22px;
     }
     .d-btn_box {
